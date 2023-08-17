@@ -53,6 +53,7 @@ const obtenerTabla = (columna, array) => {
 const generarTablas = (datos) => {
     matrices.innerHTML = '';
     for (const matriz of datos) {
+       
         obtenerTabla(matriz.columna, JSON.parse(matriz.original));
         obtenerTabla(matriz.columna, JSON.parse(matriz.final))
     }
