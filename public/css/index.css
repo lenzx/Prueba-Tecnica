@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+input {
+    width: 150px;
+}
+
+.contenedor {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+#matriz {
+    display: flex;
+}
+
+#boton {
+    display: none;
+}
+.caja > input {
+    margin: 0 20px 0 2px;
+}
+
+#tabla {
+    height: 92vh;
+   
+}

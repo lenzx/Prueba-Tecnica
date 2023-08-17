@@ -74,6 +74,7 @@ const transformarMatriz = (array) => {
 
 const renderizarBoton = (id, mensaje, columna) => {
     botones.innerHTML = '';
+    botones.toggleAttribute('display',)
     const btn = document.createElement('button');
     btn.setAttribute('id',`${id}`);
     btn.innerText = `${mensaje}`;

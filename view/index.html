@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <form action="" id="matriz">
-        <label for="fila">fila</label>
-        <input type="number" step="1" id="fila" name="fila" max="50" min="1">
-        <br>
-        <br>
-        <label for="columna">columna</label>
-        <input type="number"  step="1" id="columna" name="columna" max="50" min="1">
-
-        <button type="submit">Generar matriz</button>
-    </form>
-    </br>
-    <div id="boton">
+    <div class="contenedor">
+        <form action="" id="matriz">
+            <div class="caja">
+                <label for="fila">fila</label>
+                <input type="number" step="1" id="fila" name="fila" max="50" min="1">
+            
+                <label for="columna">columna</label>
+                <input type="number"  step="1" id="columna" name="columna" max="50" min="1">
+            </div>
+            <div>
+                <button class="generar" type="submit">Generar matriz</button>
+            </div>
+        </form>
+        <div>
+            <a href="matriz"><button>Ver matrices guardadas</button></a>
+        </div>
         
+        <div id="boton">
+            
+        </div>
     </div>
 
-    <div>
-        <a href="matriz"><button>asdasdas</button></a>
-    </div>
 
     <table id="tabla" >
 
