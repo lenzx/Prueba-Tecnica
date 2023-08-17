@@ -17,14 +17,21 @@ input {
     display: flex;
 }
 
-#boton {
+/* #boton {
     display: none;
-}
+} */
 .caja > input {
     margin: 0 20px 0 2px;
 }
 
 #tabla {
+    display: grid;
+    place-content: center;
     height: 92vh;
-   
+    text-align: center;
+}
+
+td {
+    width: 32px;
+    border: 1px solid rgb(23, 2, 77);
 }
