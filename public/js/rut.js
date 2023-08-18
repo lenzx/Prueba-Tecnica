@@ -6,6 +6,9 @@ const generarNumero = (cantidad) => {
         lista.push(Math.floor(Math.random()*10));  
     }
     if (lista[0] == 0){
+        if (lista[1] == 0) {
+            lista[1] == Math.floor(Math.random()*9) + 1;
+        }
         lista.shift();
     }
     return lista
@@ -52,4 +55,3 @@ document.addEventListener('submit', (e) => {
     monstrarRut(numeroVerificador(generarNumero(8)));
 
 })
-

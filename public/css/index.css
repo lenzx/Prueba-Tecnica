@@ -2,32 +2,74 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    min-width: 700px;
     display: flex;
     flex-direction: column;
 }
 input {
     width: 150px;
 }
+li{
+    list-style: none;
+    margin: auto;
+}
+li:nth-child(1){
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
 
+}
+.btn-nav, button{
+    background-color: #313866;
+    border-radius: 12px;
+    border: solid black 2px;
+    height: 40px;
+    color: white;
+}
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    height: 20px;
+}
+nav, .contenedor {
+    background-color: #504099 ;
+}
 .contenedor {
     display: flex ;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: 60px;
+    padding: 0 40px;
 }
 
 #matriz {
     display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .caja > input {
     margin: 0 20px 0 2px;
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 80px;
+    padding: 0 10px;
 }
 #contenedor-tabla {
     flex-grow: 1;
-    margin: 20px;
+    padding: 20px;
     display: grid;
     place-content: center;
+    background-color: white;
 
 }
 #tabla {
@@ -37,5 +79,7 @@ input {
 
 td {
     width: 32px;
-    border: 1px solid rgb(6, 122, 2);
+    border: 4px outset black;
+    border-radius:8 px;
+    background-color: white;
 }
