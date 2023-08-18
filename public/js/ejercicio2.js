@@ -41,7 +41,12 @@ const nuevaLista = (array) => {
             contador=1;
         }
     }
-    console.log(arrayObjetos);
+    return arrayObjetos
 }
 
-console.log(nuevaLista(datos_entrada));
+alert(`array de nombres: 
+${datos_entrada}
+
+
+lista de objetos: 
+${JSON.stringify(nuevaLista(datos_entrada))}`);
