@@ -13,6 +13,12 @@ app.get('/', (req, res) => {
 app.get('/matriz', (req, res) => {
   res.sendFile(__dirname + '/view/matrices.html')
 }); 
+app.get('/rut', (req, res) => {
+  res.sendFile(__dirname + '/view/rut.html')
+}); 
+app.get('/ejercicio2', (req, res) => {
+  res.sendFile(__dirname + '/view/ejercicio2.html')
+});
 
 app.use('/api/matriz', matrizRouter);
 

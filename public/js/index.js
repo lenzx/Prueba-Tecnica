@@ -89,6 +89,7 @@ const renderizarBoton = (id, mensaje, columna) => {
             const listaFinal = transformarMatriz([...listaOrdenada]);
             obtenerTabla(columna, listaFinal);
             const response = await postData(lista, listaFinal, columna);
+            botones.innerHTML="";
         }        
     })
 }

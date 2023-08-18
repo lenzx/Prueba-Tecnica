@@ -30,7 +30,9 @@ const getOneData = async (idMatriz) => {
     }
 }
 
-const obtenerTabla = (columna, array) => {
+const obtenerTabla = (columna, array, id, nombre) => {
+    const name = document.createElement('div');
+    name.innerText = `id: ${id} matriz: ${nombre}`;
     const tabla = document.createElement('table');
     let contador = 0;
     let newfila;
@@ -47,15 +49,15 @@ const obtenerTabla = (columna, array) => {
             tabla.appendChild(newfila);
         } 
     }
+    matrices.appendChild(name);
     matrices.appendChild(tabla);
 }
 
 const generarTablas = (datos) => {
     matrices.innerHTML = '';
     for (const matriz of datos) {
-       
-        obtenerTabla(matriz.columna, JSON.parse(matriz.original));
-        obtenerTabla(matriz.columna, JSON.parse(matriz.final))
+        obtenerTabla(matriz.columna, JSON.parse(matriz.original), matriz.id, 'original');
+        obtenerTabla(matriz.columna, JSON.parse(matriz.final), matriz.id, 'final');
     }
 
 }
@@ -74,8 +76,8 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await getOneData(dataForm.id);
         matrices.innerHTML = '';
-        obtenerTabla(response.body.columna, JSON.parse(response.body.original));
-        obtenerTabla(response.body.columna, JSON.parse(response.body.final));
+        obtenerTabla(response.body.columna, JSON.parse(response.body.original), response.body.id, "original");
+        obtenerTabla(response.body.columna, JSON.parse(response.body.final), response.body.id, "final");
     } catch (error) {
         alert('no se encontro la id buscada');
     }
