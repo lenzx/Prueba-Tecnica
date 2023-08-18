@@ -1,4 +1,4 @@
-const { json } = require('sequelize');
+
 const sequelizeMatriz = require('../../../sequelize/matriz')
 
 module.exports = {

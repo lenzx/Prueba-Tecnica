@@ -6,6 +6,6 @@ const sequelize = new Sequelize(config.sequelize.database, config.sequelize.user
     dialect: 'mysql'
 });
 
-module.exports = {sequelize}
+module.exports = {sequelize};
 
 
