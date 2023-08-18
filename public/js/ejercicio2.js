@@ -1,4 +1,5 @@
-
+const lista = document.querySelector("#lista");
+const obj = document.querySelector("#objeto");
 const datos_entrada = ["Yungay",
     "Calbuco",
     "Taltal",
@@ -44,9 +45,23 @@ const nuevaLista = (array) => {
     return arrayObjetos
 }
 
-alert(`array de nombres: 
-${datos_entrada}
+for (let j of datos_entrada){
+    let tr = document.createElement("tr");
+    let td = document.createElement("td");
+    td.innerText = j;
+    tr.appendChild(td)
+    lista.appendChild(tr)
+}
 
-
-lista de objetos: 
-${JSON.stringify(nuevaLista(datos_entrada))}`);
+for (let i of nuevaLista(datos_entrada)){
+    let tr = document.createElement("tr");
+    let comuna = document.createElement("td");
+    let cantidad = document.createElement("td");
+    comuna.innerText = i.comuna;
+    cantidad.innerText = i.cantidad;
+    tr.appendChild(comuna)
+    tr.appendChild(cantidad)
+    obj.appendChild(tr)
+}
+console.log(datos_entrada)
+console.log(nuevaLista(datos_entrada));

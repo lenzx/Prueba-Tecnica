@@ -7,7 +7,7 @@ const generarNumero = (cantidad) => {
     }
     if (lista[0] == 0){
         if (lista[1] == 0) {
-            lista[1] == Math.floor(Math.random()*9) + 1;
+            lista[1] = Math.floor(Math.random()*9) + 1;
         }
         lista.shift();
     }
@@ -41,7 +41,6 @@ const numeroVerificador = (array) => {
 }
 
 const monstrarRut = (array) => {
-    console.log(array)
     respuesta.innerHTML = ''
     if (array.length == 8) {
         respuesta.innerHTML = (`${array.slice(0,1)}.${array.slice(1,4)}.${array.slice(4,7)}-${array[7]}`).replace(/,/g, '')
@@ -53,5 +52,4 @@ const monstrarRut = (array) => {
 document.addEventListener('submit', (e) => {
     e.preventDefault();
     monstrarRut(numeroVerificador(generarNumero(8)));
-
 })

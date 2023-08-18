@@ -19,6 +19,9 @@ app.get('/rut', (req, res) => {
 app.get('/ejercicio2', (req, res) => {
   res.sendFile(__dirname + '/view/ejercicio2.html')
 });
+app.get('/ejercicio3', (req, res) => {
+  res.sendFile(__dirname + '/view/ejercicio3.html')
+});
 
 app.use('/api/matriz', matrizRouter);
 
