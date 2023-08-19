@@ -1,5 +1,3 @@
-
-
 const btn = document.querySelector('#button');
 const form = document.querySelector('#busqueda');
 const matrices = document.querySelector('#matrices');
@@ -56,8 +54,13 @@ const obtenerTabla = (columna, array, id, nombre) => {
 const generarTablas = (datos) => {
     matrices.innerHTML = '';
     for (const matriz of datos) {
-        obtenerTabla(matriz.columna, JSON.parse(matriz.original), matriz.id, 'original');
-        obtenerTabla(matriz.columna, JSON.parse(matriz.final), matriz.id, 'final');
+        if (typeof(matriz.original) === 'string'){
+            obtenerTabla(matriz.columna, JSON.parse(matriz.original), matriz.id, 'original');
+            obtenerTabla(matriz.columna, JSON.parse(matriz.final), matriz.id, 'final');
+        } else {
+            obtenerTabla(matriz.columna, matriz.original, matriz.id, 'original');
+            obtenerTabla(matriz.columna, matriz.final, matriz.id, 'final');
+        }
     }
 
 }
