@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 3</title>
     <link rel="stylesheet" href="./css/ejercicio3.css">
 </head>
 <body>
@@ -23,10 +23,10 @@ static void configurar() {
     // entonces preparar reproducción de audio de ese tipo
     if( args[0]=="ogg" ) {
         /* Es formato .ogg */
-        player = new OGGAudio();
+        player = <span class="res">new OGGAudio();</span>
     } else { // sino, preparar reproducción de audio de tipo mp3 por defecto.
         /* Es formato .mp3 */
-        player = new MP3Audio();
+        player = <span class="res">new MP3Audio();</span>
     }
 }
                     
