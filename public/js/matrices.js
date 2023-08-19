@@ -79,10 +79,15 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await getOneData(dataForm.id);
         matrices.innerHTML = '';
-        obtenerTabla(response.body.columna, JSON.parse(response.body.original), response.body.id, "original");
-        obtenerTabla(response.body.columna, JSON.parse(response.body.final), response.body.id, "final");
+        if (typeof(matriz.original) === 'string') {
+            obtenerTabla(response.body.columna, JSON.parse(response.body.original), response.body.id, "original");
+            obtenerTabla(response.body.columna, JSON.parse(response.body.final), response.body.id, "final");
+        } else {
+            obtenerTabla(response.body.columna, response.body.original, response.body.id, "original");
+            obtenerTabla(response.body.columna, response.body.final, response.body.id, "final");
+        }
     } catch (error) {
-        alert('no se encontro la id buscada');
+        alert('no se encontró la id buscada');
     }
 })
 
