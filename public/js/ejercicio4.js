@@ -90,6 +90,7 @@ const renderizarBoton = (id, mensaje, columna) => {
             obtenerTabla(columna, listaFinal);
             const response = await postData(lista, listaFinal, columna);
             botones.innerHTML="";
+            alert("La matriz se a guardado correctamente");
         }        
     })
 }
