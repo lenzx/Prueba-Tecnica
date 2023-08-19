@@ -7,5 +7,6 @@ module.exports = {
         host: process.env.SEQUELIZE_HOST || 'localhost',
         user: process.env.SEQUELIZE_USER || 'root',
         password: process.env.SEQUELIZE_PASSWORD || '',
+        port: process.env.SEQUELIZE_PORT || 8080,
     }
 }

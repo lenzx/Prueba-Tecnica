@@ -1,8 +1,19 @@
+
 # Prueba Tecnica
 
-Para la realizacion de la prueba tecnica se uso javascript con el framework Express.js, se decidio tomar esta decision ya que este framework permite gestionar facilmente las rutas y poder gestionar facilmente la base de datos en conjunto con el ORM sequelize. Para la base de datos se uso Mysql a traves de la aplicacion XAMPP que permite crear un servidor local.
+Para la realización de la prueba técnica se uso javascript con el Framework Express.js, se decidió tomar esta decision ya que este Framework permite gestionar fácilmente las rutas y poder gestionar fácilmente la base de datos en conjunto con el ORM sequelize. Para la base de datos se uso Mysql a través de la aplicación XAMPP que permite crear un servidor local.
 
-Para el correcto funcionamiento se debe tener instalado node.js y ejecutar el comando npm install. la configuracion de la base de datos esta en el archivo config.js, para ejecutarse de manera local requiere tener previamente una base de datos mysql que coincida con la configuracion del archivo config.js.
+Para el correcto funcionamiento se debe tener instalado node.js y ejecutar el comando npm install. la configuración de la base de datos esta en el archivo config.js, para ejecutarse de manera local requiere tener previamente una base de datos mysql que coincida con la configuración del archivo config.js.
+
+Instrucciones desde local:
+instalar node.js desde https://nodejs.org/es en caso de no tenerlo instalado
+desde la carpeta origen los comandos que se deben correr:
+-npm install
+-node index.js
+abrir navegador y en el url escribir -localhost:3000
+
+
+
 
 
 
@@ -24,3 +35,4 @@ En este caso, se mostró el atributo "player" declarado pero no se encuentra ins
 #### Pregunta 4
 
 La solución se encuentra en la carpeta (./public/js/ejercicio4.js) y (./public/js/ejercicio4.js).
+

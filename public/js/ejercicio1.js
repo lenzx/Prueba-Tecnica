@@ -1,7 +1,7 @@
 const respuesta = document.querySelector("#respuesta");
 
 const generarNumero = (cantidad) => {
-    lista = []
+    const lista = []
     for (let index = 0; index < cantidad; index++) {
         lista.push(Math.floor(Math.random()*10));  
     }
