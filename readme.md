@@ -1,10 +1,8 @@
 # Vista: https://prueba-tecnica-7vvw.onrender.com/
-# Prueba Tecnica
+# Prueba Técnica
 
 
 Para la realización de la prueba técnica se uso javascript con el Framework Express.js, se decidió tomar esta decision ya que este Framework permite gestionar fácilmente las rutas y poder gestionar fácilmente la base de datos en conjunto con el ORM sequelize. Para la base de datos se uso Mysql a través de la aplicación XAMPP que permite crear un servidor local.
-
-Para el correcto funcionamiento se debe tener instalado node.js y ejecutar el comando npm install. la configuración de la base de datos esta en el archivo config.js, para ejecutarse de manera local requiere tener previamente una base de datos mysql que coincida con la configuración del archivo config.js.
 
 Instrucciones desde local:
 -instalar node.js desde https://nodejs.org/es en caso de no tenerlo instalado
