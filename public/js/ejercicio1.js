@@ -47,6 +47,7 @@ const monstrarRut = (array) => {
     } else {
         respuesta.innerHTML = (`${array.slice(0,2)}.${array.slice(2,5)}.${array.slice(5,8)}-${array[8]}`).replace(/,/g, '')
     }
+    console.log(respuesta.innerHTML);
 }
 
 document.addEventListener('submit', (e) => {

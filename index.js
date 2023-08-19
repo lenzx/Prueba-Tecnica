@@ -8,13 +8,13 @@ const app = express();
 app.use(express.json());
 app.use(express.static('public'));
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/view/index.html')
+    res.sendFile(__dirname + '/view/ejercicio4.html')
 });
 app.get('/matriz', (req, res) => {
   res.sendFile(__dirname + '/view/matrices.html')
 }); 
-app.get('/rut', (req, res) => {
-  res.sendFile(__dirname + '/view/rut.html')
+app.get('/ejercicio1', (req, res) => {
+  res.sendFile(__dirname + '/view/ejercicio1.html')
 }); 
 app.get('/ejercicio2', (req, res) => {
   res.sendFile(__dirname + '/view/ejercicio2.html')
