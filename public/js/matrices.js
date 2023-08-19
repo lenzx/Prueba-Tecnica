@@ -79,7 +79,7 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await getOneData(dataForm.id);
         matrices.innerHTML = '';
-        if (typeof(matriz.original) === 'string') {
+        if (typeof(response.body.original) === 'string') {
             obtenerTabla(response.body.columna, JSON.parse(response.body.original), response.body.id, "original");
             obtenerTabla(response.body.columna, JSON.parse(response.body.final), response.body.id, "final");
         } else {
