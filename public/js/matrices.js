@@ -65,7 +65,6 @@ const generarTablas = (datos) => {
 
 }
 
-
 btn.addEventListener('click', async (e) => {
     e.preventDefault();
     const data = await getData();
